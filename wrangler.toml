@@ -1,0 +1,14 @@
+name = "reploco-ai-style-worker"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[[vectorize]]
+binding = "VECTORIZE"
+index_name = "reploco-style-768"
+
+[vars]
+VISION_MODEL = "gemini-2.5-flash"
+# Comma-separated EXACT hostnames of REPLOCO product images (no wildcards)
+ALLOWED_IMAGE_HOSTS = "reploco.com,img.reploco.com"
+# Secrets added using `npx wrangler secret put GEMINI_API_KEY`
+# and `npx wrangler secret put REPLOCO_SHARED_SECRET`.
